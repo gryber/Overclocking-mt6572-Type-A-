@@ -1,10 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- */
-
 #include <linux/kernel.h>
 #include <linux/module.h>
 #include <linux/sched.h>
@@ -172,10 +165,18 @@ static struct mt_cpu_freq_info mt6572_freqs_e1_1[] = {
     OP(DVFS_F2, DVFS_V1),
     OP(DVFS_F3, DVFS_V1),
 };
-/*Table for Lenovo a369i REv 3*/
+/*Table for Lenovo a369i REv 2*/
 static struct mt_cpu_freq_info mt6572m_freqs_e1[] = {
     OP(DVFS_D1, DVFS_V0),
     OP(DVFS_D2, DVFS_V1),
+    OP(DVFS_D3, DVFS_V1),
+    OP(DVFS_F1, DVFS_V1),
+    OP(DVFS_F2, DVFS_V1),
+    OP(DVFS_F3, DVFS_V1),
+};
+static struct mt_cpu_freq_info mt6572w_freqs_e1[] = {
+    OP(DVFS_D1, DVFS_V0),
+    OP(DVFS_D2, DVFS_V0),
     OP(DVFS_D3, DVFS_V1),
     OP(DVFS_F1, DVFS_V1),
     OP(DVFS_F2, DVFS_V1),
